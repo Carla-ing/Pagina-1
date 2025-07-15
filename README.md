@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <html lang="es">
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control Inteligente de Transporte</title>
@@ -401,25 +402,17 @@
             </h2>
             <div class="recharge-form">
                 <div class="form-group">
-                    <label for="cardNumber">Número de Tarjeta</label>
+                    <label for="cardNumber">Recarga</label>
                     <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
                 </div>
+
                 <div class="form-group">
-                    <label for="rechargeAmount">Monto a Recargar</label>
-                    <select id="rechargeAmount">
-                        <option value="10">S/. 10.00</option>
-                        <option value="20">S/. 20.00</option>
-                        <option value="50">S/. 50.00</option>
-                        <option value="100">S/. 100.00</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="paymentMethod">Método de Pago</label>
+                    <label for="paymentMethod">Recarga</label>
                     <select id="paymentMethod">
-                        <option value="visa">Visa</option>
-                        <option value="mastercard">Mastercard</option>
-                        <option value="yape">Yape</option>
-                        <option value="plin">Plin</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
                     </select>
                 </div>
                 <div class="form-group">
