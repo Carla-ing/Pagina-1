@@ -519,24 +519,24 @@
         }
 
         // Función para procesar la recarga
-        function processRecharge() {
-            const cardNumber = document.getElementById('cardNumber').value;
-            const amount = document.getElementById('rechargeAmount').value;
-            const paymentMethod = document.getElementById('paymentMethod').value;
-            const rechargePoint = document.getElementById('rechargePoint').value;
-            
-            if (!cardNumber) {
-                alert('Por favor, ingresa el número de tarjeta');
-                return;
-            }
-            
-            // Simulación de procesamiento
-            alert(`Recarga procesada exitosamente!\n\nTarjeta: ${cardNumber}\nMonto: S/. ${amount}.00\nMétodo: ${paymentMethod}\nPunto: ${rechargePoint}`);
-            
-            // Limpiar el formulario
-            document.getElementById('cardNumber').value = '';
+  function processRecharge() {
+        const cardNumber = document.getElementById('cardNumber').value;
+        const amount = document.getElementById('paymentMethod').value;
+        const rechargePoint = document.getElementById('rechargePoint').value;
+        
+        if (!cardNumber) {
+            alert('Por favor, ingresa el número de tarjeta');
+            return;
         }
 
+        alert(`Recarga procesada exitosamente!\n\nTarjeta: ${cardNumber}\nMonto: S/. ${amount}.00\nPunto: ${rechargePoint}`);
+
+        setTimeout(() => {
+            window.location.href = "https://carla-ing.github.io/Metodo-de-Pago";
+        }, 1000);
+
+        document.getElementById('cardNumber').value = '';
+    }
         // Inicializar la aplicación
         document.addEventListener('DOMContentLoaded', function() {
             updateTime();
